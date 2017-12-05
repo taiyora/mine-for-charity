@@ -16,9 +16,6 @@ block content
             });
         });
 
-    div.header
-        h1(style='padding-left: 10px;')= title
-
     table(width='100%')
         tr
             td(width='48%', align='right' valign='top')
@@ -32,6 +29,10 @@ block content
                         | That's a good thing, but it also affects sites like ours!<br>
                         | Fortunately, by simply disabling any ad blocking extension you use for this site and reloading the page, you should be good to go.
 
+                h3 Charities
+                div.charities
+                    p.small <a href='#'>Contact us to get listed!</a>
+
             td(width='4%' align='center' valign='top')
                 h2 ←
 
@@ -40,7 +41,7 @@ block content
                 h2(style='padding-left: 115px;') ↓
                 h2 Leave this page open
                 h2(style='padding-left: 115px;') ↓
-                h2 Digital currency is generated
+                h2 Digital currency is generated <img src='/images/monero-symbol-1280.png' height='30px'>
                 h2(style='padding-left: 115px;') ↓
                 h2 All proceeds are sent to charity!
 
@@ -53,7 +54,9 @@ block content
                     | <br>
                     | Mine for Charity simply uses your browser to help "mine" Monero coins in small amounts.<br>
                     | <br>
-                    | The coins are then collected together automatically and sent directly to your favorite charities at the end of each month!
+                    | The coins are then collected together automatically and sent directly to your favorite charities at the end of each month!<br>
+                    | <br>
+                    | More info at our <a href='/faq'>FAQ</a>
 
                 p.expand-three <a href='#'>Why?</a>
                 p.content-three.block

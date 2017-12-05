@@ -9,13 +9,29 @@ h1 {
     color: #333;
 }
 
+h1.logo {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
 h2 {
     font: 30px Raleway;
     color: #333;
 }
 
+h3 {
+    margin: 0;
+
+    font: 20px Raleway;
+    color: #333;
+}
+
 p {
     font: 14px Raleway;
+}
+
+p.small {
+    font-size: 12px;
 }
 
 p.block {
@@ -37,8 +53,21 @@ a:hover {
 }
 
 div.header {
+    height: 60px;
     padding-top: 1px;
 
-    background: linear-gradient(#eee, white);
+    background: linear-gradient(#ccc, white);
     border-bottom: 1px #ccc dashed;
+}
+
+div.content {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+div.charities {
+    width: 400px;
+    padding-right: 15px;
+
+    border: 1px #ccc dashed;
 }

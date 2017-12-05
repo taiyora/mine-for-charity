@@ -9,4 +9,12 @@ html
         script(src='/javascripts/jquery-3.2.1.min.js')
 
     body
+        div.header
+            div(style='float: left;')
+                h1.logo(onclick="location.href='/'") Mine for Charity
+
+            div(style='float: right;')
+                h3(style='padding: 10px; padding-top: 30px;')
+                    a(href='/faq') FAQ
+
         block content
