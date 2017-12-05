@@ -2,7 +2,6 @@ extends layout
 
 block content
     script(src='https://authedmine.com/lib/simple-ui.min.js', async)
-
     script.
         $(document).ready( function() {
             $('.expand-one').click(function() {
@@ -24,7 +23,7 @@ block content
                     data-key='GJApuFGx3H8ln9pdNgQtEbuMmLhjPyMl'
                 )
                     p.expand-two <a href='#'>There's no Start Mining button!</a>
-                    p.content-two.block
+                    p.content-two(style='display: none;')
                         | Some ad blockers block the miner that we use. They do this to prevent sites from secretly using your computer to mine digital currency in the background.<br>
                         | That's a good thing, but it also affects sites like ours!<br>
                         | Fortunately, by simply disabling any ad blocking extension you use for this site and reloading the page, you should be good to go.
@@ -50,7 +49,7 @@ block content
                 p.expand-one <a href='#'>How does it work?</a>
                 p.content-one.block
                     | <a href='https://getmonero.org/'>Monero</a> is a <a href='https://en.wikipedia.org/wiki/Digital_currency'>digital currency</a>
-                    | that can be generated using any ordinary computer or device.<br>
+                    | (or "cryptocurrency") that can be generated using any ordinary computer or device.<br>
                     | <br>
                     | Mine for Charity simply uses your browser to help "mine" Monero coins in small amounts.<br>
                     | <br>

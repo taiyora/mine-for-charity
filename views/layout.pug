@@ -8,15 +8,28 @@ html
 
         script(src='/javascripts/jquery-3.2.1.min.js')
 
+        script(src='/socket.io/socket.io.js')
+        script.
+            var socket = io();
+
+            socket.on('users_online', function(users_online) {
+                $('#online').text(users_online + ' users online');
+            });
+
     body
         div.header
-            div(style='float: left;')
-                h1.logo(onclick="location.href='/'") Mine for Charity
+            table(width='100%')
+                tr
+                    td(width='30%')
+                        h1.logo(onclick="location.href='/'") Mine for Charity
 
-            div(style='float: right;')
-                h3(style='padding: 10px; padding-top: 30px;')
-                    a(href='/faq') FAQ
-                    | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    a(href='/contact') Contact
+                    td(width='40%')
+                        p#online(align='center') 0 users online
+
+                    td(align='right')
+                        h3(style='padding-right: 10px;')
+                            a(href='/faq') FAQ
+                            | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            a(href='/contact') Contact
 
         block content
