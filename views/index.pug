@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    script(src='https://authedmine.com/lib/simple-ui.min.js', async)
+    script(src='https://authedmine.com/lib/simple-ui.min.js' async)
     script.
         $(document).ready( function() {
             $('.expand-one').click(function() {
@@ -21,6 +21,7 @@ block content
                 div.coinhive-miner(
                     style='width: 520px; height: 200px;'
                     data-key='GJApuFGx3H8ln9pdNgQtEbuMmLhjPyMl'
+                    data-throttle='0.5'
                 )
                     p.expand-two <a href='#'>There's no Start Mining button!</a>
                     p.content-two(style='display: none;')
@@ -40,7 +41,7 @@ block content
                 h2(style='padding-left: 115px;') ↓
                 h2 Leave this page open
                 h2(style='padding-left: 115px;') ↓
-                h2 Digital currency is generated <img src='/images/monero-symbol-1280.png' height='30px'>
+                h2 Digital currency is generated <a href='https://getmonero.org/'><img src='/images/monero-symbol-1280.png' height='30px'></a>
                 h2(style='padding-left: 115px;') ↓
                 h2 All proceeds are sent to charity!
 
@@ -55,7 +56,7 @@ block content
                     | <br>
                     | The coins are then collected together automatically and sent directly to your favorite charities at the end of each month!<br>
                     | <br>
-                    | More info at our <a href='/faq'>FAQ</a>
+                    | More info at our <a href='/faq'>FAQ</a>.
 
                 p.expand-three <a href='#'>Why?</a>
                 p.content-three.block
@@ -67,4 +68,4 @@ block content
                     | <br>
                     | We work with reputable charity organizations to do what we can to make the world a better place. We hope you'll help!<br>
                     | <br>
-                    | Feel free to contact us at _ with any questions
+                    | Feel free to contact us at _ with any questions.
