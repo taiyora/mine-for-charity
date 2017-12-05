@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 10px;
+
+    font: 40px 'Poiret One';
+    color: #333;
+}
+
+div.header {
+    background: linear-gradient(white, #eee);
+    border-bottom: 1px #ccc dashed;
+}
