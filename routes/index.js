@@ -12,4 +12,8 @@ router.get('/faq', function(req, res, next) {
     res.render('faq', { title: website_name + ' - FAQ'});
 });
 
+router.get('/contact', function(req, res, next) {
+    res.render('contact', { title: website_name + ' - Contact'});
+});
+
 module.exports = router;
