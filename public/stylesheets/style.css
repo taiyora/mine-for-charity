@@ -18,6 +18,15 @@ p {
     font: 14px Raleway;
 }
 
+p.block {
+    display: none;
+    width: 600px;
+
+    padding-left: 5px;
+    
+    border-left: 1px #ccc dashed;
+}
+
 a {
     color: royalblue;
     text-decoration: none;
