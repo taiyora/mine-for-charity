@@ -15,6 +15,12 @@ html
             socket.on('users_online', function(users_online) {
                 $('#online').text(users_online + ' users online');
             });
+            socket.on('hashes_rate', function(hashrate) {
+                $('#hashrate').text(hashrate + 'H/S global hashrate - ');
+            });
+            socket.on('hashes_total', function(hashes) {
+                $('#hashes').text(hashes + ' total hashes');
+            });
 
     body
         div.header
@@ -24,7 +30,11 @@ html
                         h1.logo(onclick="location.href='/'") Mine for Charity
 
                     td(width='40%')
-                        p#online(align='center') 0 users online
+                        p(align='center')
+                            span#online
+                            <br>
+                            span.faded#hashrate
+                            span.faded#hashes
 
                     td(align='right')
                         h3(style='padding-right: 10px;')

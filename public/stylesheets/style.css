@@ -43,6 +43,10 @@ p.block {
     border-left: 1px #ccc dashed;
 }
 
+span.faded {
+    color: #888;
+}
+
 a {
     color: royalblue;
     text-decoration: none;
