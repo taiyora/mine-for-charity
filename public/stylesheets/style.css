@@ -9,7 +9,27 @@ h1 {
     color: #333;
 }
 
+h2 {
+    font: 30px Raleway;
+    color: #333;
+}
+
+p {
+    font: 14px Raleway;
+}
+
+a {
+    color: royalblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 div.header {
-    background: linear-gradient(white, #eee);
+    padding-top: 1px;
+
+    background: linear-gradient(#eee, white);
     border-bottom: 1px #ccc dashed;
 }
